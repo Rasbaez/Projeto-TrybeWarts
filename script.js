@@ -6,7 +6,6 @@ const emailCerto = 'tryber@teste.com';
 const senhaCerta = 123456;
 
 btnLogin.addEventListener('click', (e) => {
-
   const emailValue = inputEmail.value;
   const passwordValue = inputPassword.value;
 
