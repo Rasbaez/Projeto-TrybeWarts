@@ -1,17 +1,17 @@
 const btnLogin = document.querySelector('#btn-login');
-const inputEmail = document.querySelector('.input-email');
-const inputPassword = document.querySelector('.input-password');
+const inputEmail = document.querySelector('#email');
+const inputPassword = document.querySelector('#password');
 
+let emailCerto = 'tryber@teste.com'
+let senhaCerta = 123456
 
-btnLogin.addEventListener('input', () => {
+btnLogin.addEventListener('click', (e) => {
 
+  let emailValue = inputEmail.value;
+  let passwordValue = inputPassword.value;
 
-  const userEmail = 'tryber@teste.com'
-  const userpassword = 123456;
-  const emailValue = inputEmail.value;
-  const passValue = inputPassword.value;
-
-  if ((emailValue === userEmail) && (passValue === userpassword)) {
+  e.preventDefault()
+  if (emailValue == emailCerto && passwordValue == senhaCerta) {
     alert('Olá tryber');
   } else {
     alert('Email ou senha inválidos');
