@@ -10,6 +10,7 @@ btnLogin.addEventListener('click', (e) => {
   let emailValue = inputEmail.value;
   let passwordValue = inputPassword.value;
 
+  
   e.preventDefault()
   if (emailValue == emailCerto && passwordValue == senhaCerta) {
     alert('Olá tryber');
