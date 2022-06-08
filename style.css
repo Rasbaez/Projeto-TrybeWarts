@@ -26,8 +26,8 @@ main , #evaluation-form {
   height: 500px;
 }
 
-#evaluation-form input {
+.evaluation-input-form{
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: ;
+
 }
