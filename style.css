@@ -6,6 +6,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-around;
+  align-items: center;
 }
 
 .trybewarts-login {
@@ -19,15 +21,45 @@ main , #evaluation-form {
 
 #evaluation-form {
   width: 675px;
+  margin: 29px 7%;
+  display: flex;
+  gap: 10px;
+  flex-flow: wrap;
   flex-direction: column;
+ 
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin-left: 70%;
 }
 
-.evaluation-input-form{
+#evaluation-form input {
   display: flex;
-  flex-direction: ;
+  flex-direction: row;
+  max-width: 50%;
+}
+
+#input-lastname {
+  align-self: center;
+  margin-left: 34%;
+  margin-top: -29px;
+}
+
+#input-email{
+
+
+}
+
+#label-house{
+  display: flex;
+  margin-left: 62%;
+  margin-top: -28px;
+}
+
+#house{
+
+}
+#label-family{
 
 }
