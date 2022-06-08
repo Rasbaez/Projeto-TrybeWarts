@@ -26,7 +26,6 @@ main , #evaluation-form {
   gap: 10px;
   flex-flow: wrap;
   flex-direction: column;
- 
 }
 
 #trybewarts-forms-logo {
@@ -46,20 +45,9 @@ main , #evaluation-form {
   margin-top: -29px;
 }
 
-#input-email{
-
-
-}
-
-#label-house{
+#label-house {
   display: flex;
   margin-left: 62%;
   margin-top: -28px;
 }
 
-#house{
-
-}
-#label-family{
-
-}
