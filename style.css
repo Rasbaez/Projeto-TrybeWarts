@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  left: 0;
+
 }
 
 .header {
@@ -19,6 +21,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 675px;
+  margin: 0;
 }
 
 img {
@@ -60,5 +64,30 @@ img {
 }
 
 #familia {
+  display: flex;
+}
+
+#conteudos {
+  display: flex;
+}
+
+#avaliacao {
+  display: flex;
+}
+
+#comentario {
+  display: flex;
+  flex-direction: column;
+}
+
+#comentario textarea {
+  width: 10px;
+}
+
+#concorda label {
+  display: flex;
+}
+
+#agreement {
   display: flex;
 }
