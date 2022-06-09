@@ -3,12 +3,14 @@ const btnSubmit = document.querySelector('#submit-btn');
 const concorda = document.querySelector('#agreement');
 const inputEmail = document.querySelector('#email');
 const inputPassword = document.querySelector('#password');
-const emailCerto = 'tryber@teste.com';
-const senhaCerta = 123456;
+const textArea = document.getElementById('textarea');
 
-btnSubmit.disabled = true
+
+btnSubmit.disabled = true;
 
 btnLogin.addEventListener('click', (e) => {
+  const emailCerto = 'tryber@teste.com';
+  const senhaCerta = 123456;
   const emailValue = inputEmail.value;
   const passwordValue = inputPassword.value;
 
@@ -29,13 +31,12 @@ concorda.addEventListener('click', () => {
   }
 });
 
+
 function limitText(qty) {
-  let textAreaValue = document.getElementById('textarea').value;
-  const count = document.querySelector('#counter');
   const limit = 500;
   const total = qty.length;
-  let rest = limit - total;
+  const rest = limit - total;
+  const counter = document.querySelector('#counter');
 
-   total <= limit ? count.innerHTML = rest : textAreaValue = qty.substr(0, limit);
-
+  counter.innerText = rest;
 }
