@@ -2,24 +2,24 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <img src="./images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form class="trybewarts-login">
-            <input type="email" id="email" name="email" placeholder="Email">
-            <input type="password" id="password" name="password" placeholder="Senha">
-            <button id="btn-login">Entrar</button>
-        </form>
-    </header>
+  <header class="header">
+    <img src="./images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="password" id="password" name="password" placeholder="Senha">
+        <button id="btn-login">Entrar</button>
+    </form>
+  </header>
 
     <main>
         <form action="" id="evaluation-form">
@@ -67,18 +67,23 @@
                     <input type="radio" name='rate' value='10'>10
                 </label>
 
-                <label for="text-area" class="textarea"> Deixe seu comentário:</label>
-                <input type="text-area" max-length="500">
+                <div>
+                  <label for="text-area" class="textarea"> Deixe seu comentário:</label>
+                  <textarea name="infos"  maxlength="500"></textarea>
+                </div>
 
-                <label for="infos" id="infos">Você concorda com o uso das informações acima?</label>
-                <textarea name="infos"  maxlength="500"></textarea>
-
-                <label for="" id="label-infos">Você concorda com o uso das informações acima?
-                    <input type="checkbox"id='agreement' >
-                </label> 
+                <div>
+                  <label for="" id="label-infos">Você concorda com o uso das informações acima?
+                      <input type="checkbox"id='agreement'>
+                  </label> 
+                </div>
             
             <button type="submit" id="submit-btn">Enviar</button>
         </form>
+
+        <footer>
+          <p>Direitos reservados à Trybewarts© </p>
+        </footer>
 
 
     </main>
