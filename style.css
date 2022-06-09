@@ -15,11 +15,19 @@
   align-items: center;
 }
 
-main , #evaluation-form {
+main {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+img {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #evaluation-form {
+  display: flex;
   width: 675px;
   margin: 29px 7%;
   display: flex;
@@ -49,4 +57,8 @@ main , #evaluation-form {
   display: flex;
   margin-left: 62%;
   margin-top: -28px;
+}
+
+#familia {
+  display: flex;
 }
