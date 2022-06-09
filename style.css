@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   left: 0;
-
 }
 
 .header {
@@ -63,15 +62,7 @@ img {
   margin-top: -28px;
 }
 
-#familia {
-  display: flex;
-}
-
-#conteudos {
-  display: flex;
-}
-
-#avaliacao {
+#familia , #conteudos , #avaliacao , #agreement {
   display: flex;
 }
 
@@ -85,9 +76,5 @@ img {
 }
 
 #concorda label {
-  display: flex;
-}
-
-#agreement {
   display: flex;
 }
