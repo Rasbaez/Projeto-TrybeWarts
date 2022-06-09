@@ -71,8 +71,10 @@
         </div>
 
         <div id="comentario">
-          <label for="text-area" class="textarea"> Deixe seu comentário:</label>
-          <textarea name="infos"  maxlength="500"></textarea>
+          <label for="textarea" class="textarea"> Deixe seu comentário:</label>
+          <textarea name="infos" id="textarea" onkeyup="limitText(this.value)" maxlength="500" ></textarea>
+         <p><span  id="counter"style="font-weight: bold;" ></span>Caracteres restantes</p>
+         
         </div>
 
         <div id="concorda">

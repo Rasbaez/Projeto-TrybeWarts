@@ -21,10 +21,21 @@ btnLogin.addEventListener('click', (e) => {
 });
 
 // Verifica se concorda com os termos
-  concorda.addEventListener('click', () => { 
-    if (concorda.checked){
-      btnSubmit.disabled = false
-    } else {
-      btnSubmit.disabled = true
-    }
-  })
+concorda.addEventListener('click', () => {
+  if (concorda.checked) {
+    btnSubmit.disabled = false;
+  } else {
+    btnSubmit.disabled = true;
+  }
+});
+
+function limitText(qty) {
+  let textAreaValue = document.getElementById('textarea').value;
+  const count = document.querySelector('#counter');
+  const limit = 500;
+  const total = qty.length;
+  let rest = limit - total;
+
+   total <= limit ? count.innerHTML = rest : textAreaValue = qty.substr(0, limit);
+
+}
