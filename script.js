@@ -5,8 +5,9 @@ const inputEmail = document.querySelector('#email');
 const inputPassword = document.querySelector('#password');
 const textArea = document.getElementById('textarea');
 
-
 btnSubmit.disabled = true;
+btnSubmit.style.backgroundColor = 'gray';
+btnSubmit.style.color = '#ffffff80';
 
 btnLogin.addEventListener('click', (e) => {
   const emailCerto = 'tryber@teste.com';
@@ -26,8 +27,12 @@ btnLogin.addEventListener('click', (e) => {
 concorda.addEventListener('click', () => {
   if (concorda.checked) {
     btnSubmit.disabled = false;
+    btnSubmit.style.backgroundColor = '#470047';
+    btnSubmit.style.color = '#ffffff';
   } else {
     btnSubmit.disabled = true;
+    btnSubmit.style.backgroundColor = 'gray';
+    btnSubmit.style.color = '#ffffff80';
   }
 });
 

@@ -21,10 +21,13 @@
     </form>
   </header>
 
+  <h1 id="titulo">Formulário de Avaliação</h1>
+
   <main>
-    <h1>Formulário de Avaliação</h1>
+
+    
     <form action="" id="evaluation-form">
-      <section>
+      <section id="primeiraSessao">
         <input type="text" id="input-name" class="evaluation-input-form" placeholder="Nome">
         
         <input type="text" name="input-lastname" id="input-lastname" class="evaluation-input-form" placeholder="Sobrenome">
@@ -43,55 +46,73 @@
         
       </section>
 
-        <!-- <hr> -->
-        
-        <label for="family" id="label-family">Qual sua família?</label>
-        <div id="familia">
-          <input type="radio" value="Frontend" name="family"> Frontend
-          <input type="radio" value="Backend" name="family"> Backend
-          <input type="radio" value="FullStack" name="family"> FullStack
+      <hr>
+
+      <section id="segundaSecao">
+
+        <div id="areas">
+          <label for="family" id="label-family">Qual sua família?</label>
+          <div id="familia">
+            <input type="radio" value="Frontend" name="family"> Frontend
+            <input type="radio" value="Backend" name="family"> Backend
+            <input type="radio" value="FullStack" name="family"> FullStack
+          </div>
         </div>
 
-        <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender</label>
-        <div id="conteudos">
-          <input type="checkbox" class="subject" value="HoFs">HoFs
-          <input type="checkbox" class="subject" value="Jest">Jest
-          <input type="checkbox" class="subject" value="Promises">Promises
-          <input type="checkbox" class="subject" value="React">React
-          <input type="checkbox" class="subject" value="SQL">SQL
-          <input type="checkbox" class="subject" value="Python">Python
+        <div id="tecnologias">
+          <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div id="conteudos">
+            <input type="checkbox" class="subject" value="HoFs">HoFs
+            <input type="checkbox" class="subject" value="Jest">Jest
+            <input type="checkbox" class="subject" value="Promises">Promises
+            <input type="checkbox" class="subject" value="React">React
+            <input type="checkbox" class="subject" value="SQL">SQL
+            <input type="checkbox" class="subject" value="Python">Python
+          </div>
         </div>
 
-        <label for="label-rate" id="label-rate">Como você avalia a Trybewarts?
+      </section>
+
+      <hr>
+
+      <section id="terceiraSecao">
+        <div id="avaliacao-div">
+          <label for="label-rate" id="label-rate">Como você avalia a Trybewarts?</label>
             <div id="avaliacao">
-            <input type="radio" name='rate' value='1'>1
-            <input type="radio" name='rate' value='2'>2
-            <input type="radio" name='rate' value='3'>3
-            <input type="radio" name='rate' value='4'>4
-            <input type="radio" name='rate' value='5'>5
-            <input type="radio" name='rate' value='6'>6
-            <input type="radio" name='rate' value='7'>7
-            <input type="radio" name='rate' value='8'>8
-            <input type="radio" name='rate' value='9'>9
-            <input type="radio" name='rate' value='10'>10
-          </label>
+              <input type="radio" name='rate' value='1'>1
+              <input type="radio" name='rate' value='2'>2
+              <input type="radio" name='rate' value='3'>3
+              <input type="radio" name='rate' value='4'>4
+              <input type="radio" name='rate' value='5'>5
+              <input type="radio" name='rate' value='6'>6
+              <input type="radio" name='rate' value='7'>7
+              <input type="radio" name='rate' value='8'>8
+              <input type="radio" name='rate' value='9'>9
+              <input type="radio" name='rate' value='10'>10
+            </div>
         </div>
+      
+        <div id="comentario">
+          <label for="textarea">Deixe seu comentário:</label>
+          <textarea name="infos" id="textarea" rows="10" cols="50" maxlength="500"></textarea>
+        </div>
+
+        <!-- Eu substitui o seu text area pois como estava com coisa de js incompleta, estava dando erro no teste. Mas caso precise do seu antigo código está aqui:
 
         <div id="comentario">
           <label for="textarea" id="textarea"> Deixe seu comentário:</label>
           <textarea name="infos" onkeyup="limitText(this.value)" id="textarea"  maxlength="500" ></textarea>
-         <p><span  id="counter"style="font-weight: bold;" ></span>Caracteres restantes</p>
-         
-        </div>
+         <p><span  id="counter"style="font-weight: bold;"></span>Caracteres restantes</p>
+        </div> -->
       
         <div id="concorda">
-          <label for="" id="label-infos">Você concorda com o uso das informações acima?
-            <input type="checkbox"id='agreement'>
-          </label> 
+          <label for="" id="label-infos">Você concorda com o uso das informações acima? </label>
+          <input type="checkbox"id='agreement'> 
         </div>
         
         <button type="submit" id="submit-btn">Enviar</button>
-    </form>
+      </section>
+      </form>
   </main>
   
   <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">

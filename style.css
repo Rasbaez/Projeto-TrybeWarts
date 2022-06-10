@@ -41,29 +41,29 @@
   padding: 10px 50px;
   border-radius: 5px;
   border-style: none;
-  background-color: purple;
+  background-color: #470047;
   color: white;
+}
+
+h1#titulo {
+  display: flex;
+  width: 400px;
 }
 
 main {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   width: 675px;
-  margin: 0;
-}
-
-main h1 {
-  justify-content: center;
+  gap: 20px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  gap: 20px;
 }
 
-#evaluation-form section {
+#evaluation-form section#primeiraSessao {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -101,6 +101,99 @@ main h1 {
   background-color: rgb(231, 231, 231)
 }
 
+#segundaSecao{
+  display: flex;
+  gap: 100px;
+}
+
+#areas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#areas div#familia {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80px;
+  row-gap: 3px;
+}
+
+
+#tecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tecnologias label {
+  width: 200px;
+}
+
+#conteudos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  row-gap: 5px;
+  width: 190px;
+}
+
+#terceiraSecao {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#avaliacao-div {
+  display: flex;
+}
+
+#avaliacao-div label{
+  display: flex;
+  width: 300px;
+}
+
+#terceiraSecao div#avaliacao {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+#terceiraSecao div#comentario {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+}
+
+#terceiraSecao div#concorda {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+#label-infos {
+  display: flex;
+}
+
+#agreement {
+  display: flex;
+  align-items: baseline;
+}
+
+#submit-btn {
+  padding: 10px 50px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #470047;
+  color: #ffffff80;
+}
+
+
 img {
   display: flex;
   justify-content: flex-end;
@@ -109,21 +202,4 @@ img {
 #trybewarts-forms-logo {
   height: 500px;
   margin-left: 70%;
-}
-
-#familia , #conteudos , #avaliacao , #agreement {
-  display: flex;
-}
-
-#comentario {
-  display: flex;
-  flex-direction: column;
-}
-
-#comentario textarea {
-  width: 10px;
-}
-
-#concorda label {
-  display: flex;
 }
