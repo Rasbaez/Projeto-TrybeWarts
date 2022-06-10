@@ -94,17 +94,10 @@
         </div>
       
         <div id="comentario">
-          <label for="textarea">Deixe seu comentário:</label>
-          <textarea name="infos" id="textarea" rows="10" cols="50" maxlength="500"></textarea>
+          <label for="textarea" class="textarea">Deixe seu comentário:</label>
+          <textarea name="infos" id="textarea" onkeyup="limitText(this.value)" rows="10" cols="50" maxlength="500"></textarea>
+          <span name="infos" id="counter" class="limitChars" style="font-weight: bold;">Caracteres restantes: 500 </span>
         </div>
-
-        <!-- Eu substitui o seu text area pois como estava com coisa de js incompleta, estava dando erro no teste. Mas caso precise do seu antigo código está aqui:
-
-        <div id="comentario">
-          <label for="textarea" id="textarea"> Deixe seu comentário:</label>
-          <textarea name="infos" onkeyup="limitText(this.value)" id="textarea"  maxlength="500" ></textarea>
-         <p><span  id="counter"style="font-weight: bold;"></span>Caracteres restantes</p>
-        </div> -->
       
         <div id="concorda">
           <label for="" id="label-infos">Você concorda com o uso das informações acima? </label>

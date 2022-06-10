@@ -3,7 +3,9 @@ const btnSubmit = document.querySelector('#submit-btn');
 const concorda = document.querySelector('#agreement');
 const inputEmail = document.querySelector('#email');
 const inputPassword = document.querySelector('#password');
-// const textArea = document.getElementById('textarea');
+
+
+
 
 btnSubmit.disabled = true;
 btnSubmit.style.backgroundColor = 'gray';
@@ -37,11 +39,10 @@ concorda.addEventListener('click', () => {
   }
 });
 
-// function limitText(qty) {
-//   const limit = 500;
-//   const total = qty.length;
-//   const rest = limit - total;
-//   const counter = document.querySelector('#counter');
-
-//   counter.innerText = rest;
-// }
+function limitText(qty) {
+  const limit = 500;
+  const total = qty.length;
+  const rest = limit - total;
+  const counter = document.querySelector('#counter');
+  counter.innerText = `Caracteres restantes: ${rest}`;
+}
