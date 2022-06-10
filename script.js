@@ -4,9 +4,6 @@ const concorda = document.querySelector('#agreement');
 const inputEmail = document.querySelector('#email');
 const inputPassword = document.querySelector('#password');
 
-
-
-
 btnSubmit.disabled = true;
 btnSubmit.style.backgroundColor = 'gray';
 btnSubmit.style.backgroundColor = 'gray';
@@ -46,3 +43,4 @@ function limitText(qty) {
   const counter = document.querySelector('#counter');
   counter.innerText = `Caracteres restantes: ${rest}`;
 }
+limitText();
