@@ -7,13 +7,42 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  justify-content: space-between ;
   align-items: center;
+  height: 75px;
+}
+
+.header img {
+  display: flex;
+  height: 80%;
+  margin-left: 15px;
+}
+
+.header h1 {
+  display: flex;
+  font-size: 50px;
+  color: white;
 }
 
 .trybewarts-login {
   display: flex;
+  margin-right: 15px;
   align-items: center;
+  gap: 10px;
+}
+
+.trybewarts-login input {
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.trybewarts-login button {
+  padding: 10px 50px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: purple;
+  color: white;
 }
 
 main {
@@ -24,42 +53,62 @@ main {
   margin: 0;
 }
 
-img {
-  display: flex;
-  justify-content: flex-end;
+main h1 {
+  justify-content: center;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
-  margin: 29px 7%;
-  display: flex;
-  gap: 10px;
-  flex-flow: wrap;
   flex-direction: column;
+}
+
+#evaluation-form section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 500px;
+  gap: 5px;
+}
+
+#evaluation-form input {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: groove;
+}
+
+#evaluation-form div#casa {
+  display: flex;
+  padding: 3px 0px;
+  width: 197px;
+  border-radius: 5px;
+  border-style: groove;
+  border: 2px solid #424242;
+  align-items: center;
+}
+
+#label-house {
+  margin-left: 10px;
+}
+
+#house {
+  font-size: 15px;
+  margin-left: 48px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(231, 231, 231)
+}
+
+img {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
   margin-left: 70%;
-}
-
-#evaluation-form input {
-  display: flex;
-  flex-direction: row;
-  max-width: 50%;
-}
-
-#input-lastname {
-  align-self: center;
-  margin-left: 34%;
-  margin-top: -29px;
-}
-
-#label-house {
-  display: flex;
-  margin-left: 62%;
-  margin-top: -28px;
 }
 
 #familia , #conteudos , #avaliacao , #agreement {

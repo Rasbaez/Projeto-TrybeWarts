@@ -22,21 +22,28 @@
   </header>
 
   <main>
+    <h1>Formulário de Avaliação</h1>
     <form action="" id="evaluation-form">
-      <input type="text" id="input-name" class="evaluation-input-form" placeholder="Nome">
-      <input type="text" name="input-lastname" id="input-lastname" class="evaluation-input-form" placeholder="Sobrenome">
-      <input type="text" name="input-email" id="input-email" class="evaluation-input-form" placeholder="Email">
+      <section>
+        <input type="text" id="input-name" class="evaluation-input-form" placeholder="Nome">
+        
+        <input type="text" name="input-lastname" id="input-lastname" class="evaluation-input-form" placeholder="Sobrenome">
+        
+        <input type="text" name="input-email" id="input-email" class="evaluation-input-form" placeholder="Email">
 
-      <label for="house" id='label-house'>Casa:
-        <select id="house" class='evaluation-input-form'>
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-      </label>
+        <div id="casa">
+          <label for="house" id='label-house'>Casa:</label>
+            <select id="house" class='evaluation-input-form'>
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+        </div>
+        
+      </section>
 
-        <hr>
+        <!-- <hr> -->
         
         <label for="family" id="label-family">Qual sua família?</label>
         <div id="familia">
