@@ -4,6 +4,15 @@
   left: 0;
 }
 
+body{
+  background-color: #EFEFEF;
+}
+
+#teste {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -45,15 +54,26 @@
   color: white;
 }
 
-h1#titulo {
-  display: flex;
-  width: 400px;
+.trybewarts-login button:hover {
+  background-color: #470047d5;
+  color: white;
 }
 
 main {
   display: flex;
+  flex-direction: column;
   width: 675px;
-  gap: 20px;
+  gap: 30px;
+}
+
+#titulo {
+  display: flex;
+}
+
+#titulo h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 #evaluation-form {
@@ -63,29 +83,31 @@ main {
   gap: 20px;
 }
 
-#evaluation-form section#primeiraSessao {
+section#primeiraSessao {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  width: 500px;
+  justify-content: center;
+  width: 100%;
   gap: 5px;
 }
 
 #evaluation-form input {
   display: flex;
-  padding: 10px;
+  padding: 10px 70px;
   border-radius: 5px;
   border-style: groove;
 }
 
 #evaluation-form div#casa {
   display: flex;
-  padding: 3px 0px;
-  width: 197px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 20px;
+  width: 275px;
+  background-color: white;
   border-radius: 5px;
   border-style: groove;
   border: 2px solid #424242;
-  align-items: center;
 }
 
 #label-house {
@@ -103,7 +125,10 @@ main {
 
 #segundaSecao{
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   gap: 100px;
+  font-size: 16px;
 }
 
 #areas {
@@ -141,6 +166,7 @@ main {
 #terceiraSecao {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -182,7 +208,6 @@ textarea {
 
 #agreement {
   display: flex;
-  align-items: baseline;
 }
 
 #submit-btn {
@@ -193,13 +218,7 @@ textarea {
   color: #ffffff80;
 }
 
-
-img {
-  display: flex;
-  justify-content: flex-end;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
-  margin-left: 70%;
+  margin-top: 50px;
 }
