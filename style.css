@@ -4,8 +4,8 @@
   left: 0;
 }
 
-body{
-  background-color: #EFEFEF;
+body {
+  background-color: rgb(239, 239, 239);
 }
 
 #teste {
@@ -16,7 +16,7 @@ body{
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between ;
+  justify-content: space-between;
   align-items: center;
   height: 75px;
 }
@@ -50,12 +50,12 @@ body{
   padding: 10px 50px;
   border-radius: 5px;
   border-style: none;
-  background-color: #470047;
+  background-color: rgb(71, 0, 71);
   color: white;
 }
 
 .trybewarts-login button:hover {
-  background-color: #470047d5;
+  background-color: rgba(71, 0, 71, 0.835);
   color: white;
 }
 
@@ -83,7 +83,7 @@ main {
   gap: 20px;
 }
 
-section#primeiraSessao {
+#primeiraSessao {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -98,7 +98,7 @@ section#primeiraSessao {
   border-style: groove;
 }
 
-#evaluation-form div#casa {
+#casa {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +107,7 @@ section#primeiraSessao {
   background-color: white;
   border-radius: 5px;
   border-style: groove;
-  border: 2px solid #424242;
+  border: 2px solid rgb(66, 66, 66);
 }
 
 #label-house {
@@ -120,10 +120,10 @@ section#primeiraSessao {
   border-style: none;
   border-radius: 5px;
   padding: 5px;
-  background-color: rgb(231, 231, 231)
+  background-color: rgb(231, 231, 231);
 }
 
-#segundaSecao{
+#segundaSecao {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -137,13 +137,12 @@ section#primeiraSessao {
   gap: 8px;
 }
 
-#areas div#familia {
+#familia {
   display: flex;
   flex-wrap: wrap;
   width: 80px;
   row-gap: 3px;
 }
-
 
 #tecnologias {
   display: flex;
@@ -174,18 +173,18 @@ section#primeiraSessao {
   display: flex;
 }
 
-#avaliacao-div label{
+#avaliacao-div label {
   display: flex;
   width: 300px;
 }
 
-#terceiraSecao div#avaliacao {
+#avaliacao {
   display: flex;
   width: 80%;
   justify-content: space-evenly;
 }
 
-#terceiraSecao div#comentario {
+#comentario {
   display: flex;
   flex-direction: column;
 }
@@ -194,7 +193,7 @@ textarea {
   resize: none;
 }
 
-#terceiraSecao div#concorda {
+#concorda {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -214,11 +213,22 @@ textarea {
   padding: 10px 50px;
   border-radius: 5px;
   border-style: none;
-  background-color: #470047;
-  color: #ffffff80;
+  background-color: rgb(71, 0, 71);
+  color: rgba(255, 255, 255, 0.502);
 }
 
 #trybewarts-forms-logo {
   height: 500px;
   margin-top: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(209, 209, 209);
+  background-color: brown;
+  height: 35px;
+  font-size: 17px;
+  margin-top: 10px;
 }
