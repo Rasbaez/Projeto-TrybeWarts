@@ -180,7 +180,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('9 - Acrescente ao formulário um select com o id `house` contendo as opções `Gitnória`, `Reactpuff`, `Corvinode` e `Pytherina`', () => {
+  describe.only('9 - Acrescente ao formulário um select com o id `house` contendo as opções `Gitnória`, `Reactpuff`, `Corvinode` e `Pytherina`', () => {
     beforeEach(() => cy.get(EVALUATION_FORM).as('houses'));
 
     const HOUSES = [
